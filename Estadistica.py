@@ -4,7 +4,8 @@ class Estadistica:
         if cadena == '':
             return [0];
         elif "," in cadena:
-            return [2];
+            arreglo = cadena.split(",")
+            return [len(arreglo)];
         else:
             return [1];
 
