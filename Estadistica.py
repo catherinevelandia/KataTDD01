@@ -6,14 +6,13 @@ class Estadistica:
 
         elif "," in cadena:
             arreglo = cadena.split(",")
+            min = int(arreglo[0])
 
-            if len(arreglo) == 2:
-                if arreglo[0] <= arreglo[1]:
-                    return [len(arreglo), int(arreglo[0])]
-                else:
-                    return [len(arreglo), int(arreglo[1])]
-            else:
-                return [len(arreglo)]
+            for a in arreglo:
+                if int(a) <= min:
+                    min = int(a)
+
+            return [len(arreglo), min]
 
         else:
             return [1, int(cadena)];
