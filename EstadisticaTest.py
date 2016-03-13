@@ -4,7 +4,7 @@ from Estadistica import Estadistica
 
 class EstadisticaTest(TestCase):
     def testCalcularEstadisticaSinElementos(self):
-        self.assertEqual(Estadistica().calcularEstadistica(''), [0, 0], 'Numero de elementos, minimo + cadena vacia')
+        self.assertEqual(Estadistica().calcularEstadistica(''), [0, 0, 0], 'Numero de elementos, minimo, maximo + cadena vacia')
 
     def testCalcularEstadisticaUnElemento(self):
         self.assertEqual(Estadistica().calcularEstadistica('8'), [1, 8], 'Numero de elementos, minimo + un elemento (8)')
