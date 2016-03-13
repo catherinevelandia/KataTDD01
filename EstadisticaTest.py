@@ -11,3 +11,6 @@ class EstadisticaTest(TestCase):
 
     def testCalcularEstadisticaDosElementos(self):
         self.assertEqual(Estadistica().calcularEstadistica('8,2'), [2], 'Numero de elementos + dos elementos (8,2)')
+
+    def testCalcularEstadisticaVariosElementos(self):
+        self.assertEqual(Estadistica().calcularEstadistica('8,2,3,7,9'), [5], 'Numero de elementos + cinco elementos (8,2,3,7,9)')
