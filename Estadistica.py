@@ -1,4 +1,5 @@
 
 class Estadistica:
     def calcularEstadistica(self, cadena):
-        return 0;
+        if cadena == '':
+            return [0];
