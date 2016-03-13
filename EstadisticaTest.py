@@ -7,7 +7,7 @@ class EstadisticaTest(TestCase):
         self.assertEqual(Estadistica().calcularEstadistica(''), [0,0], 'Numero de elementos, minimo + cadena vacia')
 
     def testCalcularEstadisticaUnElemento(self):
-        self.assertEqual(Estadistica().calcularEstadistica('8'), [1], 'Numero de elementos + un elemento (8)')
+        self.assertEqual(Estadistica().calcularEstadistica('8'), [1,8], 'Numero de elementos, minimo + un elemento (8)')
 
     def testCalcularEstadisticaDosElementos(self):
         self.assertEqual(Estadistica().calcularEstadistica('8,2'), [2], 'Numero de elementos + dos elementos (8,2)')
