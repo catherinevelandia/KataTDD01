@@ -15,6 +15,6 @@ class Estadistica:
             return [len(arreglo), min]
 
         else:
-            return [1, int(cadena)];
+            return [1, int(cadena), int(cadena)];
 
 
