@@ -2,7 +2,7 @@
 class Estadistica:
     def calcularEstadistica(self, cadena):
         if cadena == '':
-            return [0, 0, 0];
+            return [0, 0, 0, 0];
 
         elif "," in cadena:
             arreglo = cadena.split(",")
