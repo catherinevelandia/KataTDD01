@@ -1,5 +1,4 @@
 from unittest import TestCase
-
 from Estadistica import Estadistica
 
 class EstadisticaTest(TestCase):
