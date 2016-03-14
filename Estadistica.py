@@ -9,7 +9,6 @@ class Estadistica:
             min = int(arreglo[0])
             max = int(arreglo[0])
             total = 0;
-            promedio = 0;
 
             for a in arreglo:
                 total += int(a)
@@ -18,7 +17,7 @@ class Estadistica:
                 if int(a) > max:
                     max = int(a)
 
-            promedio = total / len(arreglo)
+            promedio = float(total) / len(arreglo)
             return [len(arreglo), min, max, promedio]
 
         else:
