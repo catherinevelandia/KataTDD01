@@ -8,14 +8,18 @@ class Estadistica:
             arreglo = cadena.split(",")
             min = int(arreglo[0])
             max = int(arreglo[0])
+            total = 0;
+            promedio = 0;
 
             for a in arreglo:
+                total += int(a)
                 if int(a) <= min:
                     min = int(a)
                 if int(a) > max:
                     max = int(a)
 
-            return [len(arreglo), min, max]
+            promedio = total / len(arreglo)
+            return [len(arreglo), min, max, promedio]
 
         else:
             return [1, int(cadena), int(cadena), int(cadena)];
