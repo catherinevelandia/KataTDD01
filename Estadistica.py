@@ -18,6 +18,6 @@ class Estadistica:
             return [len(arreglo), min, max]
 
         else:
-            return [1, int(cadena), int(cadena)];
+            return [1, int(cadena), int(cadena), int(cadena)];
 
 
